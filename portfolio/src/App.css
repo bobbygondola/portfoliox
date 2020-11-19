@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+  height: 90vh;
+}
+
+.homeComponent {
+  background-image: url(C:\Users\bober\documents\projects\portfoliox\portfolio\src\images\spacex.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100% 100%;
+  padding-top: 5%;
+  height: 100%;
+}
+
+#ooo{
+  background-color: red;
+  width: 20%;
+}
+
+#logo{
+  width: 100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(104, 104, 104);
+  color: aliceblue;
+  max-height: 10vh;
+}
+
+.nav h2 {
+  color: white;
+  font-size: 40px;
+  -webkit-text-stroke: 2px black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
