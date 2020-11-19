@@ -1,37 +1,102 @@
 .App {
   text-align: center;
-  height: 90vh;
+  height: 100vh;
 }
 
+/*FRONT PAGE*/
 .homeComponent {
   background-image: url(C:\Users\bober\documents\projects\portfoliox\portfolio\src\images\spacex.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100% 100%;
-  padding-top: 5%;
   height: 100%;
-}
-
-#ooo{
-  background-color: red;
-  width: 20%;
-}
-
-#logo{
-  width: 100px;
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
-  background-color: rgb(104, 104, 104);
-  color: aliceblue;
-  max-height: 10vh;
+  justify-content: space-between;
+  z-index: 1;
+  color: rgb(235, 235, 235);
+  background-color: rgb(24, 24, 24);
+  position: absolute top;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-right: 5%;
+  padding-left: 2%;
+  width: 100%;
 }
 
-.nav h2 {
+.navcont {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.navcont h3 {
+  padding-top: 5px;
+}
+
+.nav h3:hover {
+  cursor: pointer;
+  color: rgb(177, 177, 255);
+  transition: 0.5s;
+}
+
+.nav h2:hover {
+  cursor: pointer;
+  color: rgb(152, 152, 255);
+  transition: 0.5s;
+}
+
+
+/*SECOND PAGE*/
+.projectsComponent {
+  background-image: url(C:\Users\bober\documents\projects\portfoliox\portfolio\src\images\dragon.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+/*THIRD PAGE*/
+.missionComponent {
+  background-image: url(C:\Users\bober\documents\projects\portfoliox\portfolio\src\images\approach.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+/*FORTH PAGE*/
+.aboutComponent {
+  background-image: url(C:\Users\bober\documents\projects\portfoliox\portfolio\src\images\about.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100% 100%;
+  height: 100%;
+  margin-top: -20px;
+}
+
+/*FINAL PAGE*/
+.contactComponent {
   color: white;
-  font-size: 40px;
-  -webkit-text-stroke: 2px black;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-shadow: 5px 5px 5px rgb(129, 129, 129);
+  background-color: #345b73;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%234c5f8f' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%235c73ad' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%234c5f8f' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%235c73ad' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%236c87cc' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%2330408f' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%233b4ead' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23455ccc' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%233b4ead' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%2330408f' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23455ccc' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%2330408f' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23455ccc' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%233b4ead' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23455ccc' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+  padding: 7%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactComponent h3:hover{
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  text-shadow: 5px 5px 5px rgb(161, 161, 161);
+  transition: .5s;
 }
