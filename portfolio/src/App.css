@@ -12,44 +12,12 @@
   height: 100%;
 }
 
-.nav {
+#menu-primary > .active{
+  border-bottom: 1px solid white;
+}
+
+.Navbar{
   display: flex;
-  justify-content: space-between;
-  z-index: 1;
-  color: rgb(235, 235, 235);
-  background-color: rgb(24, 24, 24);
-  position: absolute top;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding-right: 5%;
-  padding-left: 2%;
-  width: 100%;
-}
-
-.navcont {
-  display: flex;
-  justify-content: space-between;
-  width: 75%;
-}
-
-.name {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 500;
-}
-
-.navcont h3 {
-  padding-top: 5px;
-}
-
-.nav h3:hover {
-  cursor: pointer;
-  color: rgb(177, 177, 255);
-  transition: 0.5s;
-}
-
-.nav h2:hover {
-  cursor: pointer;
-  color: rgb(152, 152, 255);
-  transition: 0.5s;
 }
 
 /*SECOND PAGE*/

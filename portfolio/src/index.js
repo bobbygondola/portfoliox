@@ -12,8 +12,6 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 library.add(fab, faEnvelope, faPhone, faMapMarkerAlt)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App />,
   document.getElementById('root')
 );
