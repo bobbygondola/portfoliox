@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
   height: 100vh;
 }
 
@@ -17,7 +16,56 @@
 }
 
 .Navbar{
+  font-size: 18px;
+  font-family: 'Goldman', cursive;
+  color: white;
+  background-color: black;
+  height: 80px;
+}
+
+.select{
   display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  width: 60%;
+}
+
+.navItem:hover{
+  cursor: pointer;
+  color: grey;
+  transition: .5s;
+}
+/*END OF NAV*/
+
+/*FRONT PAGE*/
+.intro{
+  width: fit-content;
+  font-family: 'Goldman', cursive;
+  color: white;
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.Socials{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ion{
+  background-color: rgb(165, 161, 161);
+  color: white;
+  font-size: 50px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  padding: 15%;
+}
+
+.ion:hover{
+  color: #4a62ff;
+  background: rgb(179, 195, 247);
+  transition: .5s;
 }
 
 /*SECOND PAGE*/
