@@ -83,8 +83,8 @@
 /*FINAL PAGE*/
 .ContactForm {
   height: fit-content;
-  padding: 5%;
   width: 100%;
+  height: fit-content;
   background-color: #210f00;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
   background-attachment: fixed;
@@ -93,9 +93,8 @@
 
 /* Contact */
 form {
-  margin-top: 20px;
-  padding-top: 5%;
-	background: #1f2235;
+  background: #1f2235;
+  padding-top: 15px;
 }
 
 .formRow {
@@ -171,11 +170,24 @@ form {
 	}
 }
 
+.section-title{
+  padding-top: 100px;
+}
+
 .contact-info {
+  margin-top: 100px!important;
 	padding: 25px;
 	padding-left: 20px;
 	border-radius: 6px;
 	background: #282c45;
+}
+
+.main-color{
+  color: #ff4a57;
+}
+
+.sec-color{
+  color: rgb(204, 192, 192);
 }
 
 .contact-info span {
@@ -196,6 +208,86 @@ form {
 .contact-icon {
 	color: #ff4a57;
 	font-size: 32px;
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-20px);
+       transform: translateX(-20px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+#thanks{
+  color: #ff4a57;
+}
+
+#thanks:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        color: rgb(255, 255, 255);
+        transition: .5s;
 }
 
 /* End of Contact */
