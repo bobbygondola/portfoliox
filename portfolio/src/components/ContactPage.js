@@ -4,8 +4,21 @@ import '../App.css'
 
 const ContactPage = () => {
 
-  function sendEmail(e) {
-    e.preventDefault();
+    function useToggle(initialValue = false){
+        const [value, setValue] = React.useState(initialValue);
+
+        const toggle = React.useCallback(() => {
+            setValue(v => !v);
+        }, []);
+
+        return [value, toggle]
+    }
+
+    const [isSubmitted, toggleIsSubmitted] = useToggle();
+
+    function sendEmail(e) {
+        e.preventDefault();
+
 
     emailjs.sendForm('service_bczolfw', 'template_lj566lp', e.target, 'user_hQPixskBNwkloxn3oefOy')
       .then((result) => {
@@ -13,10 +26,18 @@ const ContactPage = () => {
       }, (error) => {
           console.log(error.text);
       });
+    
+    
+    e.target.reset();
+    
+
   }
 
   return (
     <div className='ContactForm'>
+        <>
+        {isSubmitted ? <h2 id="thanks">Thank You, I will reach back out! <span>hover me..</span></h2> : null}
+        </>
         <div className='container'>
             <div className='row'>
                 <div className='col-12 text-center'>
@@ -68,14 +89,15 @@ const ContactPage = () => {
                                         rows='5'
                                         name='message'
                                         className='form-control formInput'
-                                        placeholder='Message'
+                                        placeholder='Quick Send Email Program, Try it out!'
                                     ></textarea>
                                 </div>
                             </div>
-                            
-                            <button className='submit-btn' type='submit'>
+
+                            <button onClick={toggleIsSubmitted} className='submit-btn' type='submit'>
                                 Submit
                             </button>
+                            
                         </form>
                     </div>
                 </div>
