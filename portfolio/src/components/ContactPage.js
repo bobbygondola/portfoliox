@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import '../App.css'
 
 const ContactPage = () => {
 
@@ -15,18 +16,73 @@ const ContactPage = () => {
   }
 
   return (
-    <form className="contact-form" onSubmit={sendEmail}>
+    <div className='ContactForm'>
+        <div className='container'>
+            <div className='row'>
+                <div className='col-12 text-center'>
+                    <div className='contactForm'>
+                        <form id='contact-form' onSubmit={sendEmail}>
 
-      <input type="subject" name="subject" />
+                            {/* Row 1 of form */}
 
-      <input type="text" name="from_name" placeholder="Name"/>
+                            <div className='row formRow'>
+                                <div className='col-6'>
+                                    <input
+                                        type='text'
+                                        name='from_name'
+                                        className='form-control formInput'
+                                        placeholder='Name'
+                                    ></input>
+                                </div>
 
-      <input type="email" name="reply_to" placeholder="Email" />
+                                <div className='col-6'>
+                                    <input
+                                        type='email'
+                                        name='reply_to'
+                                        className='form-control formInput'
+                                        placeholder='Email address'
+                                    ></input>
+                                </div>
+                            </div>
 
-      <textarea type="text" name="message" placeholder="Send me an email! Its fast and easy!"/>
-      <input type="submit" value="Send" />
-    </form>
-  );
+                            {/* Row 2 of form */}
+
+                            <div className='row formRow'>
+                                <div className='col'>
+                                    <input
+                                        type='text'
+                                        name='subject'
+                                        
+                                        className='form-control formInput'
+                                        placeholder='Subject'
+                                    ></input>
+                                </div>
+                            </div>
+
+
+                            {/* Row 3 of form */}
+
+                            <div className='row formRow'>
+                                <div className='col'>
+                                    <textarea
+                                        rows='5'
+                                        name='message'
+                                        className='form-control formInput'
+                                        placeholder='Message'
+                                    ></textarea>
+                                </div>
+                            </div>
+                            
+                            <button className='submit-btn' type='submit'>
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+);
 }
 
 export default ContactPage;
