@@ -37,26 +37,37 @@
 /*END OF NAV*/
 
 /*FRONT PAGE*/
+
+#tryme{
+  padding-top: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#uparr{
+  transform: rotate(90deg);
+}
+
 .intro{
   width: fit-content;
   font-family: 'Goldman', cursive;
-  color: white;
+  color: rgb(233, 225, 225);
   margin-top: 15%;
   margin-left: 5%;
 }
 
 .Socials{
-  width: 70%;
+  /* border: 1px solid red; */
+  width: 120%;
   display: flex;
   justify-content: space-around;
 }
 
 .ion{
-  background-color: rgb(165, 161, 161);
+  background-color: rgb(54, 54, 54);
   color: white;
   font-size: 50px;
-  border: 2px solid grey;
-  border-radius: 100px;
+  /* border: 2px solid rgb(214, 59, 59); */
   padding: 15%;
 }
 
@@ -71,25 +82,54 @@
   background-color: #070512;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23120c32' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%231a1253' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23221676' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%2327199a' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%232a1ac0' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%232c1ae6' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%234739ee' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
-  background-size: cover;
-  padding-bottom: 100px;
-  min-height: 100%;
-  max-height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden!important;
+  height: 100vh;
 }
 
 #carousel{
+  height: 70%;
+  width: 70%;
   margin: 0 auto;
-  width: 60%;
-  padding-top: 30px;
   border-radius: 25px;
-  box-shadow: 0px 10px 20px black;
+  background-color: none;
+  box-shadow: 0px 10px 30px black;
+}
+
+.carousel-indicators li{
+  background-color: blue!important;
+}
+
+.carousel-indicators .active{
+  background-color: #f00!important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orange' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orange' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-item{
+  height: fit-content;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
 }
 
 .realCaptions{
   font-family: 'Open Sans', sans-serif;
-  background-color: rgb(70, 70, 70);
-  border-radius: 15px;
-  margin-top: 10px;
+  background-color: rgb(54, 54, 54);
+  box-shadow: 0px 10px 30px black;
+  width: 100%;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-top: 0px;
   padding: 10px;
   transition: .5s;
 }
