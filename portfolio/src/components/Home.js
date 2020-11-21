@@ -75,7 +75,7 @@ export default function Home() {
 			</div>
             {/* FRONT PAGE */}
             <div className="intro">
-            <h2>Building Software for the Future</h2>
+            <h2 style={{fontSize: "40px"}}>Building Software for the Future</h2>
             <p>Scroll to learn more about my future trajectory</p>
             <div className='Socials'>
                 <a
