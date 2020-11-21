@@ -5,6 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faMedium } from '@fortawesome/free-brands-svg-icons';
+import signature from '../images/signature.png';
+import tryme from '../images/tryme.png';
+import arrow from '../images/uparrow.svg';
 
 export default function Home() {
     return (
@@ -73,9 +76,13 @@ export default function Home() {
             </div>
             </div>		
 			</div>
+
             {/* FRONT PAGE */}
+
+            <div id ="tryme"><img style={{marginLeft: "70px"}} src={tryme}></img><img id="uparr" style={{width:"55px", marginLeft: "10px"}} src={arrow}></img></div>
+
             <div className="intro">
-            <h2>Building Software for the Future</h2>
+            <h2 style={{fontSize: "40px"}}>Building Software for the Future</h2>
             <p>Scroll to learn more about my future trajectory</p>
             <div className='Socials'>
                 <a
@@ -99,6 +106,8 @@ export default function Home() {
                 >
                     <FontAwesomeIcon className="ion" icon={faMedium} fixedWidth />
                 </a>
+
+                <img style={{width: "350px"}} src={signature}></img>
 					
 		</div>
             </div>

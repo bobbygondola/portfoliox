@@ -1,6 +1,4 @@
-.App {
-  height: 100vh;
-}
+
 
 /*FRONT PAGE*/
 .homeComponent {
@@ -8,7 +6,7 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100% 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 #menu-primary > .active{
@@ -39,42 +37,114 @@
 /*END OF NAV*/
 
 /*FRONT PAGE*/
+
+#tryme{
+  padding-top: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#uparr{
+  transform: rotate(90deg);
+}
+
 .intro{
   width: fit-content;
   font-family: 'Goldman', cursive;
-  color: white;
+  color: rgb(233, 225, 225);
   margin-top: 15%;
   margin-left: 5%;
 }
 
 .Socials{
-  width: 70%;
+  /* border: 1px solid red; */
+  width: 120%;
   display: flex;
   justify-content: space-around;
 }
 
 .ion{
-  background-color: rgb(165, 161, 161);
+  background-color: rgb(54, 54, 54);
   color: white;
   font-size: 50px;
-  border: 2px solid grey;
-  border-radius: 50%;
+  /* border: 2px solid rgb(214, 59, 59); */
   padding: 15%;
 }
 
 .ion:hover{
   color: #4a62ff;
   background: rgb(179, 195, 247);
-  transition: .5s;
+  transition: .7s;
 }
 
 /*SECOND PAGE*/
 .projectsComponent {
-  background-image: url(C:\Users\bober\documents\projects\portfoliox\portfolio\src\images\dragon.jpg);
-  background-repeat: no-repeat;
-  object-fit: cover;
-  background-size: 100% 100%;
-  height: 100%;
+  background-color: #070512;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23120c32' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%231a1253' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23221676' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%2327199a' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%232a1ac0' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%232c1ae6' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%234739ee' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden!important;
+  height: 100vh;
+}
+
+#carousel{
+  height: 70%;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: none;
+  box-shadow: 0px 10px 30px black;
+}
+
+.carousel-indicators li{
+  background-color: blue!important;
+}
+
+.carousel-indicators .active{
+  background-color: #f00!important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orange' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orange' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-item{
+  height: fit-content;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.realCaptions{
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(54, 54, 54);
+  box-shadow: 0px 10px 30px black;
+  width: 100%;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-top: 0px;
+  padding: 10px;
+  transition: .5s;
+}
+
+.realCaptions h2{
+  color: #ff4a57;
+  margin-bottom: 10px;
+}
+
+.realCaptions h3{
+  color: #e0d5d6;
+}
+
+.realCaptions h4{
+  color: #000000;
 }
 
 /*THIRD PAGE*/
@@ -83,7 +153,7 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100% 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 /*FORTH PAGE*/
@@ -92,19 +162,18 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100% 100%;
-  height: 100%;
+  height: 100vh;
   margin-top: -20px;
 }
 
 /*FINAL PAGE*/
 .ContactForm {
   height: fit-content;
-  width: 100%;
-  height: fit-content;
   background-color: #210f00;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
+  padding-bottom: 100px;
 }
 
 /* Contact */
@@ -136,6 +205,7 @@ form {
 }
 
 .formInput::placeholder {
+  font-family: 'Comfortaa', cursive;
 	color: white;
 	opacity: 1;
 }
@@ -293,7 +363,14 @@ form {
     }
 }
 
+.youveFoundAnEasterEgg{
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
 #thanks{
+  font-family: 'Open Sans', sans-serif;
   color: #ff4a57;
 }
 
@@ -307,27 +384,3 @@ form {
 }
 
 /* End of Contact */
-
-/*
-
-<h3>Give me a call:</h3>
-<p>(973) 224-3825</p>
-
-<h3>Currently located:</h3>
-<p>Charlotte, NC</p>
-
-
-
-<form className="contact-form" onSubmit={sendEmail}>
-
-
-<div id="name"><input type="text" name="from_name" placeholder="Name"/></div>
-<div id="email"><input type="email" name="reply_to" placeholder="Email" /></div>
-
-<input id="subject" type="subject" name="subject" placeholder="Subject"/>
-<textarea type="text" name="message" placeholder="Send me an email! Its fast and easy!"/>
-<input id="send" type="submit" value="Send" />
-
-</form>
-
-*/

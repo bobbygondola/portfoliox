@@ -36,7 +36,7 @@ const ContactPage = () => {
   return (
     <div className='ContactForm'>
         <>
-        {isSubmitted ? <h2 id="thanks">Thank You, I will reach back out! <span>hover me..</span></h2> : null}
+        {isSubmitted ? <div className="youveFoundAnEasterEgg"><h2 id="thanks">Thank You, I will reach back out! <span>hover me..</span></h2></div> : null}
         </>
         <div className='container'>
             <div className='row'>
@@ -89,7 +89,7 @@ const ContactPage = () => {
                                         rows='5'
                                         name='message'
                                         className='form-control formInput'
-                                        placeholder='Quick Send Email Program, Try it out!'
+                                        placeholder='This is a free, fast and reliable email program, try it out!'
                                     ></textarea>
                                 </div>
                             </div>
