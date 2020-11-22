@@ -7,8 +7,6 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faMedium } from '@fortawesome/free-brands-svg-icons';
 import Buddy from './Buddy'
 import signature from '../images/signature.png';
-import tryme from '../images/tryme.png';
-import arrow from '../images/uparrow.svg';
 
 export default function Home() {
     return (
@@ -80,9 +78,10 @@ export default function Home() {
 
             {/* FRONT PAGE */}
 
-            <div id ="tryme"><img style={{marginLeft: "70px"}} src={tryme}></img><img id="uparr" style={{width:"55px", marginLeft: "10px"}} src={arrow}></img></div>
+            {/* <div id ="tryme"><img style={{marginLeft: "70px"}} src={tryme}></img><img id="uparr" style={{width:"55px", marginLeft: "10px"}} src={arrow}></img></div> */}
 
             <Buddy />
+
 
             <div className="intro">
             <h2 style={{fontSize: "40px"}}>Building Software for the Future</h2>
@@ -112,8 +111,10 @@ export default function Home() {
 
                 <img style={{width: "350px"}} src={signature}></img>
 					
-		</div>
+		    </div>
             </div>
+
+            
 		</div>
 	);
 };
