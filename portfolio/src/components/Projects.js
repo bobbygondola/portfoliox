@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css';
+import "../styles/css/App.css"
 import ContolledCarousel from './ContolledCarousel'
 
 const Projects = () => {
