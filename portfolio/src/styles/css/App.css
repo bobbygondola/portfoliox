@@ -38,15 +38,6 @@
 
 /*FRONT PAGE*/
 
-#tryme{
-  padding-top: 20px;
-  width: 70%;
-  margin: 0 auto;
-}
-
-#uparr{
-  transform: rotate(90deg);
-}
 
 .intro{
   width: fit-content;
@@ -77,6 +68,11 @@
   transition: .7s;
 }
 
+/* .flexSpeech{
+  display: flex;
+  align-items: center;
+} */
+
 /*SECOND PAGE*/
 .projectsComponent {
   background-color: #070512;
@@ -91,7 +87,7 @@
 #carousel{
   height: 70%;
   width: 70%;
-  margin: 0 auto;
+  margin-left: 20px;
   border-radius: 25px;
   background-color: none;
   box-shadow: 0px 10px 30px black;
