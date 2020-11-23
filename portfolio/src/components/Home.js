@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles/css/App.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,12 +7,23 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faMedium } from '@fortawesome/free-brands-svg-icons';
 import Buddy from './Buddy'
 import signature from '../images/signature.png';
+import { setActiveLink } from 'react-scroll/modules/mixins/scroller';
 
 export default function Home() {
+    // const [active, setActive] = useState(0)
+
+    // // if(test[0].classList.contains('active')){
+    // //     console.log('yee')
+    // // }
+
+    // const test = <div>yo</div>
+    // console.log(test)
+
     return (
         <div className="homeComponent" id="home">
-            <div className='Navbar'>
 
+            <div className='Navbar'>
+                
             <div className="select">
             <div className="navItem">
             <Link
@@ -109,7 +120,7 @@ export default function Home() {
                     <FontAwesomeIcon className="ion" icon={faMedium} fixedWidth />
                 </a>
 
-                <img style={{width: "350px"}} src={signature}></img>
+                <img alt="signature" style={{width: "350px"}} src={signature}></img>
 					
 		    </div>
             </div>
