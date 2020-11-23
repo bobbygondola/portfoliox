@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles/css/App.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,17 +7,46 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faMedium } from '@fortawesome/free-brands-svg-icons';
 import Buddy from './Buddy'
 import signature from '../images/signature.png';
-import { setActiveLink } from 'react-scroll/modules/mixins/scroller';
 
 export default function Home() {
-    // const [active, setActive] = useState(0)
+    // const [active, setActive] = useState(0)    
 
-    // // if(test[0].classList.contains('active')){
-    // //     console.log('yee')
-    // // }
+    // document.addEventListener("scroll", inView);
+    // document.addEventListener("scroll", inView2);
+    // document.addEventListener("scroll", inView3);
+    // document.addEventListener("scroll", inView4);
 
-    // const test = <div>yo</div>
-    // console.log(test)
+    // function inView() {
+    //     if (document.getElementById("projects").getBoundingClientRect().bottom <= window.innerHeight) {
+    //         setActive(1)
+    //         console.log(active)
+    //         document.removeEventListener("scroll", inView);
+    //     }
+    // }
+
+    // function inView2() {
+    //     if (document.getElementById("mission").getBoundingClientRect().bottom <= window.innerHeight) {
+    //         setActive(2)
+    //         console.log(active)
+    //         document.removeEventListener("scroll", inView2);
+    //     }
+    // }
+
+    // function inView3() {
+    //     if (document.getElementById("about").getBoundingClientRect().bottom <= window.innerHeight) {
+    //         setActive(3)
+    //         console.log(active)
+    //         document.removeEventListener("scroll", inView3);
+    //     }
+    // }
+
+    // function inView4() {
+    //     if (document.getElementById("contact").getBoundingClientRect().bottom <= window.innerHeight) {
+    //         setActive(4)
+    //         console.log(active)
+    //         document.removeEventListener("scroll", inView4);
+    //     }
+    // }
 
     return (
         <div className="homeComponent" id="home">
@@ -94,7 +123,7 @@ export default function Home() {
             <Buddy />
 
 
-            <div className="intro">
+            <div className="intro" id="intr">
             <h2 style={{fontSize: "40px"}}>Building Software for the Future</h2>
             <p>Scroll to learn more about my future trajectory</p>
             <div className='Socials'>
