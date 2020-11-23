@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles/css/App.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,17 +7,14 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faMedium } from '@fortawesome/free-brands-svg-icons';
 import Buddy from './Buddy'
 import signature from '../images/signature.png';
-import { setActiveLink } from 'react-scroll/modules/mixins/scroller';
 
 export default function Home() {
-    // const [active, setActive] = useState(0)
+    const [active, setActive] = useState("home")    
 
-    // // if(test[0].classList.contains('active')){
-    // //     console.log('yee')
-    // // }
-
-    // const test = <div>yo</div>
-    // console.log(test)
+    const handleSetActive = (to) => {
+        setActive(to)
+        console.log(to, active)        
+    }
 
     return (
         <div className="homeComponent" id="home">
@@ -32,7 +29,8 @@ export default function Home() {
             spy={true}
             smooth={true}
             offset={0}
-            className='nav-Link'>
+            className='nav-Link'
+            onSetActive={handleSetActive}>
                 <h2>Robert M. Gondola</h2>
             </Link>
             </div>
@@ -44,7 +42,8 @@ export default function Home() {
             spy={true}
             smooth={true}
             offset={0}
-            className='nav-Link'>
+            className='nav-Link'
+            onSetActive={handleSetActive}>
                 Projects
             </Link>
         </div>
@@ -56,7 +55,8 @@ export default function Home() {
             spy={true}
             smooth={true}
             offset={0}
-            className='nav-Link'>
+            className='nav-Link'
+            onSetActive={handleSetActive}>
                 Mission
             </Link>
             </div>
@@ -68,7 +68,8 @@ export default function Home() {
             spy={true}
             smooth={true}
             offset={0}
-            className='nav-Link'>
+            className='nav-Link'
+            onSetActive={handleSetActive}>
                 About
             </Link>
             </div>
@@ -80,7 +81,8 @@ export default function Home() {
             spy={true}
             smooth={true}
             offset={0}
-            className='nav-Link'>
+            className='nav-Link'
+            onSetActive={handleSetActive}>
                 Contact
             </Link>
             </div>
@@ -91,10 +93,10 @@ export default function Home() {
 
             {/* <div id ="tryme"><img style={{marginLeft: "70px"}} src={tryme}></img><img id="uparr" style={{width:"55px", marginLeft: "10px"}} src={arrow}></img></div> */}
 
-            <Buddy />
+            <Buddy active={active} />
 
 
-            <div className="intro">
+            <div className="intro" id="intr">
             <h2 style={{fontSize: "40px"}}>Building Software for the Future</h2>
             <p>Scroll to learn more about my future trajectory</p>
             <div className='Socials'>
