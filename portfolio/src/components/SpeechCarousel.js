@@ -2,9 +2,15 @@ import React, {useState} from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import "../styles/css/Buddy.css"
 
-    const SpeechCarousel = () => {
-    const [index, setIndex] = useState(0);
-  
+    const SpeechCarousel = (props) => {
+    const [index, setIndex] = useState(1);
+    
+    const newIndex = props.active
+
+    // if (newIndex === "home"){
+    //   setIndex(3)
+    // }
+
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };

@@ -4,7 +4,7 @@ import SpeechCarousel from "./SpeechCarousel"
 import partyhat from "../images/partyhat.svg"
 import alienBuddy from "../images/alienBuddy.svg"
 
-const Buddy = () => { 
+const Buddy = (props) => { 
     return (
         <div id="BuddyComponent">
 
@@ -19,7 +19,7 @@ const Buddy = () => {
             </div>
 
             <div className="speechDiv"> 
-            <SpeechCarousel />
+            <SpeechCarousel active={props.active} />
             </div>
             
             </div>
