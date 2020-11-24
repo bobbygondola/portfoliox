@@ -5,7 +5,7 @@ import ContolledCarousel from './ContolledCarousel'
 const Projects = () => {
 
     return (
-        <div className="projectsComponent" id="projects">
+        <div className="projectsComponent" id="1">
             <ContolledCarousel />
         </div>
     )

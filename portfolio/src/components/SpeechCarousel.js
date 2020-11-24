@@ -3,13 +3,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import "../styles/css/Buddy.css"
 
     const SpeechCarousel = (props) => {
-    const [index, setIndex] = useState(1);
-    
-    const newIndex = props.active
-
-    // if (newIndex === "home"){
-    //   setIndex(3)
-    // }
+    const [index, setIndex] = useState(props.active);
 
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
@@ -20,7 +14,7 @@ import "../styles/css/Buddy.css"
       <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
         
         <Carousel.Item className="car2item">
-          <p>My name is Crypto, I will guide you through this portfolio. Hurry though, Im missing my birthday party.</p>
+          <p> {props.active} My name is Crypto, I will guide you through this portfolio. Hurry though, Im missing my birthday party.</p>
         </Carousel.Item>
 
         <Carousel.Item className="car2item">
