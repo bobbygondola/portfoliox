@@ -1,9 +1,13 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import "../styles/css/Buddy.css"
 
     const SpeechCarousel = (props) => {
-    const [index, setIndex] = useState(props.active);
+    const [index, setIndex] = useState(0);
+    
+    useEffect(() => {
+      setIndex(props.active)
+    }, [props.active])
 
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
