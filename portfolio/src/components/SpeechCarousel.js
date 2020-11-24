@@ -18,7 +18,7 @@ import "../styles/css/Buddy.css"
       <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
         
         <Carousel.Item className="car2item">
-          <p> {props.active} My name is Crypto, I will guide you through this portfolio. Hurry though, Im missing my birthday party.</p>
+          <p>My name is Crypto, I will guide you through this portfolio. Hurry though, Im missing my birthday party.</p>
         </Carousel.Item>
 
         <Carousel.Item className="car2item">

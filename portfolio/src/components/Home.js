@@ -28,7 +28,7 @@ export default function Home() {
             to="0"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-30}
             className='nav-Link'
             onSetActive={handleSetActive}>
                 <h2>Robert M. Gondola</h2>
@@ -41,7 +41,7 @@ export default function Home() {
             to="1"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-100}
             className='nav-Link'
             onSetActive={handleSetActive}>
                 Projects
@@ -54,7 +54,7 @@ export default function Home() {
             to="2"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-100}
             className='nav-Link'
             onSetActive={handleSetActive}>
                 Mission
@@ -67,7 +67,7 @@ export default function Home() {
             to="3"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-100}
             className='nav-Link'
             onSetActive={handleSetActive}>
                 About
@@ -80,7 +80,7 @@ export default function Home() {
             to="4"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-100}
             className='nav-Link'
             onSetActive={handleSetActive}>
                 Contact
