@@ -26,7 +26,7 @@ import "../styles/css/Buddy.css"
         </Carousel.Item>
 
         <Carousel.Item className="car2item">
-        <p>It seems as the author has high aspirations. That is good.</p>
+        <p>It seems as if the author has high aspirations. That is good.</p>
         </Carousel.Item>
 
         <Carousel.Item className="car2item">
