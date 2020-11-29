@@ -64,11 +64,6 @@
   transition: .7s;
 }
 
-/* .flexSpeech{
-  display: flex;
-  align-items: center;
-} */
-
 /*SECOND PAGE*/
 .projectsComponent {
   background-color: #070512;
@@ -148,14 +143,86 @@
   height: 100vh;
 }
 
+.elonQuote{
+  color: rgb(230, 230, 230);
+  width: 50%;
+  position: relative;
+  top: 20%;
+}
+
 /*FORTH PAGE*/
 .aboutComponent {
   background-image: url(C:\Users\bober\documents\projects\portfoliox\portfolio\src\images\about.jpg);
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100% 100%;
-  height: 100vh;
-  margin-top: -20px;
+  height: fit-content;
+  padding-bottom: 5%;
+}
+
+.aboutFlex{
+  padding-top: 5%;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.firstColumn{
+  text-align: center;
+  background: #1f2235;
+  color: white;
+  width: 45%;
+  padding: 2%;
+  margin-left: 5%;
+}
+
+.firstColumn h3{
+  font-family: 'Goldman', cursive;
+  color: #ff4a57;
+  padding-bottom: 3%;
+}
+
+.firstColumn h4{
+  color: #ff4a57;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.firstColumn p{
+  padding-bottom: 7%;
+  font-family: 'Comfortaa', cursive;
+}
+
+.firstColumn #swesvg{
+  max-width: 100%;
+  width: 50%;
+}
+
+.secondColumn{
+  background: #1f2235;
+  height: 90%;
+}
+
+.secondColumn img{
+  width: 100%;
+  height: 100%;
+}
+
+#aDownload{
+  position: relative;
+  right: 10%;
+  height: fit-content;
+  margin-top: 2%;
+}
+
+#dlResume{
+  background: #000000;
+  border: none;
+  color: #dddddd;
+  font-family: 'Comfortaa', cursive;
+  padding: 3%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 15px rgb(104, 104, 104);
 }
 
 /*FINAL PAGE*/
