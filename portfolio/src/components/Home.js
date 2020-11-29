@@ -9,15 +9,15 @@ import Buddy from './Buddy'
 import signature from '../images/signature.png';
 
 export default function Home() {
-    const [active, setActive] = useState("home")    
+    const [active, setActive] = useState(0)    
 
     const handleSetActive = (to) => {
-        setActive(to)
+        setActive(Number(to))
         console.log(to, active)        
     }
 
     return (
-        <div className="homeComponent" id="home">
+        <div className="homeComponent" id="0">
 
             <div className='Navbar'>
                 
@@ -25,10 +25,10 @@ export default function Home() {
             <div className="navItem">
             <Link
             activeClass='active'
-            to="home"
+            to="0"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-30}
             className='nav-Link'
             onSetActive={handleSetActive}>
                 <h2>Robert M. Gondola</h2>
@@ -38,10 +38,10 @@ export default function Home() {
         <div className="navItem">
         <Link
             activeClass='active'
-            to="projects"
+            to="1"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-100}
             className='nav-Link'
             onSetActive={handleSetActive}>
                 Projects
@@ -51,10 +51,10 @@ export default function Home() {
         <div className="navItem">
         <Link
             activeClass='active'
-            to="mission"
+            to="2"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-100}
             className='nav-Link'
             onSetActive={handleSetActive}>
                 Mission
@@ -64,10 +64,10 @@ export default function Home() {
         <div className="navItem">
         <Link
             activeClass='active'
-            to="about"
+            to="3"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-100}
             className='nav-Link'
             onSetActive={handleSetActive}>
                 About
@@ -77,10 +77,10 @@ export default function Home() {
         <div className="navItem">
         <Link
             activeClass='active'
-            to="contact"
+            to="4"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-100}
             className='nav-Link'
             onSetActive={handleSetActive}>
                 Contact

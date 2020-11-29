@@ -1,15 +1,13 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import "../styles/css/Buddy.css"
 
     const SpeechCarousel = (props) => {
-    const [index, setIndex] = useState(1);
+    const [index, setIndex] = useState(0);
     
-    const newIndex = props.active
-
-    // if (newIndex === "home"){
-    //   setIndex(3)
-    // }
+    useEffect(() => {
+      setIndex(props.active)
+    }, [props.active])
 
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
@@ -28,7 +26,7 @@ import "../styles/css/Buddy.css"
         </Carousel.Item>
 
         <Carousel.Item className="car2item">
-        <p>It seems as the author has high aspirations. That is good.</p>
+        <p>It seems as if the author has high aspirations. That is good.</p>
         </Carousel.Item>
 
         <Carousel.Item className="car2item">

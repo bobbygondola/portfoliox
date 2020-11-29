@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import Caption from './Caption'
 import Carousel from 'react-bootstrap/Carousel'
 import gol from '../images/gameoflife1.png'
+import softcard from '../images/softcard.png'
+import softcard2 from '../images/softcard2.png'
 import crypto from '../images/crypto.png'
 import apollo from '../images/apollo.png'
 import apollo2 from '../images/apollo2.png'
@@ -21,7 +23,15 @@ function ControlledCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={crypto}
+            src={softcard}
+            alt="First slide"
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={softcard2}
             alt="First slide"
           />
         </Carousel.Item>
@@ -49,6 +59,15 @@ function ControlledCarousel() {
             alt="Third slide"
           />
         </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={crypto}
+            alt="Third slide"
+          />
+        </Carousel.Item>
+
         <Carousel.Item>
           <img
             className="d-block w-100"

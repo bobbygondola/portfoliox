@@ -3,7 +3,7 @@ import "../styles/css/App.css"
 
 const Mission = () => {
     return (
-        <div className="missionComponent" id="mission">
+        <div className="missionComponent" id="2">
             
         </div>
     )
