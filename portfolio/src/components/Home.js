@@ -91,8 +91,6 @@ export default function Home() {
 
             {/* FRONT PAGE */}
 
-            {/* <div id ="tryme"><img style={{marginLeft: "70px"}} src={tryme}></img><img id="uparr" style={{width:"55px", marginLeft: "10px"}} src={arrow}></img></div> */}
-
             <Buddy active={active} />
 
 

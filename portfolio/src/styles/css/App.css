@@ -158,6 +158,55 @@
   margin-top: -20px;
 }
 
+.aboutFlex{
+  display: flex;
+  height: 100%;
+}
+
+.firstColumn{
+  text-align: center;
+  background: #1f2235;
+  color: white;
+  width: 30%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+  padding: 3%;
+}
+
+.firstColumn h3{
+  margin-top: 15%;
+  color: #ff4a57;
+}
+
+.secondColumn{
+  background: #1f2235;
+  color: white;
+  width: 30%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.secondColumn img{
+  width: 100%;
+  height: 100%;
+}
+
+#aDownload{
+  height: fit-content;
+  margin-top: 2%;
+}
+
+#dlResume{
+  background: #1f2235;
+  border: 2px solid rgb(146, 15, 15);
+  margin-left: 5px;
+  color: #ff4a57;
+  padding: 3%;
+  border-radius: 5px;
+}
+
 /*FINAL PAGE*/
 .ContactForm {
   height: fit-content;
