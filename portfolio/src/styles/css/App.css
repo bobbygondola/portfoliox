@@ -154,13 +154,15 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100% 100%;
-  height: 100vh;
-  margin-top: -20px;
+  height: fit-content;
+  padding-bottom: 5%;
 }
 
 .aboutFlex{
+  padding-top: 5%;
   display: flex;
   height: 100%;
+  justify-content: space-around;
 }
 
 .firstColumn{
@@ -168,24 +170,36 @@
   background: #1f2235;
   color: white;
   width: 30%;
-  height: 80%;
-  margin-left: 10%;
-  margin-top: 2%;
-  padding: 3%;
+  height: 90%;
+  padding: 2%;
+  margin-left: 5%;
 }
 
 .firstColumn h3{
-  margin-top: 15%;
+  font-family: 'Goldman', cursive;
   color: #ff4a57;
+  padding-bottom: 3%;
+}
+
+.firstColumn h4{
+  color: #ff4a57;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+.firstColumn p{
+  padding-bottom: 7%;
+  font-family: 'Comfortaa', cursive;
+}
+
+.firstColumn #swesvg{
+  max-width: 100%;
+  width: 50%;
 }
 
 .secondColumn{
   background: #1f2235;
-  color: white;
-  width: 30%;
-  height: 80%;
-  margin-left: 10%;
-  margin-top: 2%;
+  height: 90%;
 }
 
 .secondColumn img{
@@ -194,15 +208,17 @@
 }
 
 #aDownload{
+  position: relative;
+  right: 15%;
   height: fit-content;
   margin-top: 2%;
 }
 
 #dlResume{
-  background: #1f2235;
-  border: 2px solid rgb(146, 15, 15);
-  margin-left: 5px;
-  color: #ff4a57;
+  background: #ffffff;
+  border: 2px solid rgb(75, 78, 209);
+  color: #000000;
+  font-family: 'Comfortaa', cursive;
   padding: 3%;
   border-radius: 5px;
 }
