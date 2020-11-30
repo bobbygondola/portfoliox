@@ -8,8 +8,6 @@ const Mission = () => {
             <div className="elonQuote">
                 <h3>"People should pursue what they're passionate about. That will make them happier than pretty much anything else."</h3><span>- Elon Musk</span>
             </div>
-
-        
             
         </div>
     )
