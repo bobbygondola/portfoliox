@@ -119,6 +119,7 @@
   margin-top: 0px;
   padding: 10px;
   transition: .5s;
+  overflow: hidden;
 }
 
 .realCaptions h2{
@@ -144,11 +145,17 @@
 }
 
 .elonQuote{
+  background: rgba(0, 0, 0, 0.4);
+  padding: .5%;
   color: rgb(230, 230, 230);
-  width: 50%;
+  width: 60%;
   position: relative;
-  top: 35%;
+  top: 20%;
   left: 10%;
+}
+
+.elonQuote h3{
+  font-size: 36px;
 }
 
 /*FORTH PAGE*/
