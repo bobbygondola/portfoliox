@@ -18,23 +18,23 @@ import "../styles/css/Buddy.css"
       <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
         
         <Carousel.Item className="car2item">
-          <p>My name is Crypto, I will guide you through this portfolio. Hurry though, Im missing my birthday party.</p>
+          <p>My name is Crypto, I will guide you through this portfolio.</p>
         </Carousel.Item>
 
         <Carousel.Item className="car2item">
-        <p>Here we have a list of projects engineered by the author.. Whats his name? Oh.. Robert, I think.</p>
+        <p>Here we have a list of projects engineered by Robert.</p>
         </Carousel.Item>
 
         <Carousel.Item className="car2item">
-        <p>It seems as if the author has high aspirations. That is good.</p>
+        <p>It seems as if the author has high aspirations.</p>
         </Carousel.Item>
 
         <Carousel.Item className="car2item">
-        <p>This seems to be an 'About' Section. Seen one.. seen them all.</p>
+        <p>This seems to be an 'About' Section. Download his resume!</p>
         </Carousel.Item>
 
         <Carousel.Item className="car2item">
-        <p>Why dont you go ahead and send the author an email so I can get back to my birthday party on Hyperion.</p>
+        <p>Why dont you go ahead and send the author an email?</p>
         </Carousel.Item>
       </Carousel>
 
