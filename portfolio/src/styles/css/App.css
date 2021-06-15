@@ -2,7 +2,7 @@
 
 /*FRONT PAGE*/
 .homeComponent {
-  background-image: url(C:\Users\bober\documents\projects\portfoliox\portfolio\src\images\spacex.jpg);
+  background-image: url("../../images/spacex.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100% 100%;
@@ -137,7 +137,7 @@
 
 /*THIRD PAGE*/
 .missionComponent {
-  background-image: url(C:\Users\bober\documents\projects\portfoliox\portfolio\src\images\approach.jpg);
+  background-image: url("../../images/approach.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100% 100%;
@@ -160,7 +160,7 @@
 
 /*FORTH PAGE*/
 .aboutComponent {
-  background-image: url(C:\Users\bober\documents\projects\portfoliox\portfolio\src\images\about.jpg);
+  background-image: url("../../images/about.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: 100% 100%;
