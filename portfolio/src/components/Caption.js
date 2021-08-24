@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Dont mind this, this was a quick fix to find the index of the carousel and return that to a "Buddy" component who walks thorough the portfolio.
 const getIndex = (index) => {
 
     if (index === 0) {
